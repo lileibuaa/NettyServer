@@ -23,7 +23,7 @@ public class HelloNetty {
             ServerBootstrap sbs = new ServerBootstrap();
             sbs.group(loopGroup)
                     .channel(NioServerSocketChannel.class)
-                    .localAddress(new InetSocketAddress(9191))
+                    .localAddress(new InetSocketAddress(10191))
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
